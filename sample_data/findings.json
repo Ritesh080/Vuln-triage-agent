@@ -1,0 +1,74 @@
+{
+  "findings": [
+    {
+      "id": "F-001",
+      "source": "semgrep",
+      "title": "SQL Injection in user lookup",
+      "description": "User-controlled input concatenated directly into SQL query in get_user_by_email().",
+      "file_path": "app/db/users.py",
+      "line": 42,
+      "raw_severity": "high"
+    },
+    {
+      "id": "F-002",
+      "source": "trivy",
+      "title": "Known RCE in image processing library",
+      "description": "Remote code execution vulnerability in bundled ImageMagick due to unsanitized file input.",
+      "package": "imagemagick",
+      "cve": "CVE-2023-34152",
+      "raw_severity": "critical"
+    },
+    {
+      "id": "F-003",
+      "source": "semgrep",
+      "title": "Reflected XSS in search page",
+      "description": "Search query param rendered without escaping in results.html template.",
+      "file_path": "app/templates/results.html",
+      "line": 18,
+      "raw_severity": "medium"
+    },
+    {
+      "id": "F-004",
+      "source": "dependabot",
+      "title": "Outdated JWT library with signature bypass",
+      "description": "auth token validation library allows alg=none bypass, affecting session auth.",
+      "package": "pyjwt",
+      "cve": "CVE-2022-29217",
+      "raw_severity": "high"
+    },
+    {
+      "id": "F-005",
+      "source": "trivy",
+      "title": "Hardcoded API secret in Dockerfile",
+      "description": "Payment gateway API secret key hardcoded as ENV in Dockerfile.",
+      "file_path": "Dockerfile",
+      "raw_severity": "critical"
+    },
+    {
+      "id": "F-006",
+      "source": "semgrep",
+      "title": "Verbose error message discloses stack trace",
+      "description": "Unhandled exception returns full stack trace to client in debug mode.",
+      "file_path": "app/main.py",
+      "line": 88,
+      "raw_severity": "low"
+    },
+    {
+      "id": "F-007",
+      "source": "dependabot",
+      "title": "Outdated logging library, no known exploit",
+      "description": "Minor version behind upstream, changelog shows no security fixes.",
+      "package": "structlog",
+      "raw_severity": "info"
+    },
+    {
+      "id": "F-008",
+      "source": "semgrep",
+      "title": "Missing rate limit on login endpoint",
+      "description": "Auth login endpoint has no rate limiting, enabling credential-stuffing attacks.",
+      "file_path": "app/routes/auth.py",
+      "line": 27,
+      "raw_severity": "medium"
+    }
+  ]
+}

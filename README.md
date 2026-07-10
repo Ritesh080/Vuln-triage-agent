@@ -7,6 +7,20 @@ for sensitive findings (auth, payments, secrets).
 
 Built with **Claude Code**.
 
+## Screenshots
+
+**Interactive API docs (Swagger UI)**
+![Swagger UI](screenshots/1_swagger_ui.png)
+
+**Aggregated risk report**
+![Report endpoint](screenshots/2_report_endpoint.png)
+
+**All findings with triage results**
+![Findings list](screenshots/3_findings_list.png)
+
+**Single finding detail**
+![Single finding](screenshots/4_single_finding_F005.png)
+
 ## Why this exists
 
 Manual triage of scanner output (Semgrep, Trivy, Dependabot, etc.) is slow

@@ -5,8 +5,6 @@ findings (SAST/DAST/dependency-scanner style) using an LLM agent, with a
 schema-validated structured output contract and a human-escalation guardrail
 for sensitive findings (auth, payments, secrets).
 
-Built with **Claude Code**.
-
 ## Screenshots
 
 **Interactive API docs (Swagger UI)**

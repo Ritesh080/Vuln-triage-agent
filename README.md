@@ -8,7 +8,9 @@ for sensitive findings (auth, payments, secrets).
 ## Screenshots
 
 **Interactive API docs (Swagger UI)**
-![Swagger UI](screenshots/1_swagger_ui.png)
+<img width="2720" height="1800" alt="5_dashboard_ui" src="https://github.com/user-attachments/assets/a87d8ecf-0f32-4aa2-9959-bb0329092c2e" />
+
+
 
 **Aggregated risk report**
 ![Report endpoint](screenshots/2_report_endpoint.png)
